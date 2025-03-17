@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="BackgroundInteractableNarrow" position_real="0.36979166666666669 0.31481481481481483 0.26041666666666669 0.37037037037037035" align="Default" name="MainPanel">
+        <Property key="NeedKey" value="false"/>
+        <Property key="NeedMouse" value="true"/>
+        <Property key="InheritsAlpha" value="false"/>
+        <Widget type="TextBox" skin="TextBox" position_real="0.10000000000000001 0.125 0.80000000000000004 0.125" align="Default">
+            <Property key="Caption" value="#{CONTROLLER_LIGHT_TITLE}"/>
+            <Property key="FontName" value="SM_HeaderLarge_Wide"/>
+            <Property key="TextAlign" value="Center"/>
+            <Property key="NeedKey" value="false"/>
+            <Property key="NeedMouse" value="false"/>
+        </Widget>
+        <Widget type="Window" skin="PanelEmpty" position_real="0.10000000000000001 0.5625 0.80000000000000004 0.20000000000000001" name="intensity">
+            <Property key="Range" value="20"/>
+            <Property key="NeedKey" value="false"/>
+        </Widget>
+        <Widget type="ImageBox" skin="ImageBox" position_real="0.442 0.3175 0.106 0.155" align="Default" name="Value">
+            <Property key="Caption" value="1"/>
+            <Property key="FontName" value="Default"/>
+            <Property key="TextAlign" value="Center"/>
+            <Property key="NeedKey" value="false"/>
+            <Property key="NeedMouse" value="false"/>
+            <Property key="ImageResource" value="IconsLampSpritesheet"/>
+            <Property key="ImageGroup" value="IconsLampSpritesheet"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position_real="0.13 0.5 0.71999999999999997 0.067500000000000004" name="intensityLabel">
+            <Property key="TextAlign" value="Left VCenter"/>
+            <Property key="Caption" value="Intensity"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position_real="0.13 0.80000000000000004 0.20000000000000001 0.067500000000000004">
+            <Property key="TextAlign" value="Left VCenter"/>
+            <Property key="Caption" value="Default state"/>
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" position_real="0.33000000000000002 0.77000000000000002 0.16 0.125" name="DefaultOn">
+            <Property key="Caption" value="#{ON}"/>
+            <Property key="FontName" value="SM_ButtonSmall"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="Button" skin="SettingsButton" position_real="0.48999999999999999 0.77000000000000002 0.16 0.125" name="DefaultOff">
+            <Property key="Caption" value="#{OFF}"/>
+            <Property key="FontName" value="SM_ButtonSmall"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings/>
+</MyGUI>

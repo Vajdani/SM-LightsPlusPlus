@@ -1,0 +1,887 @@
+{
+    "partList": [
+        {
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "color": "df7f01",
+            "flammable": true,
+            "legacyId": 200,
+            "name": "obj_light_headlight",
+            "physicsMaterial": "Plastic",
+            "ratings": {
+                "buoyancy": 4,
+                "density": 2,
+                "durability": 3,
+                "friction": 4
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$GAME_DATA/Objects/Mesh/lights/obj_light_headlight_off.fbx",
+                        "pose0": "$GAME_DATA/Objects/Mesh/lights/obj_light_headlight_on.fbx",
+                        "subMeshMap": {
+                            "lightcone_mat": {
+                                "material": "PoseAnimLightCone",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            "lightflare_mat": {
+                                "material": "PoseAnimLightFlare",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightflare_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            "lightmesh_mat": {
+                                "material": "PoseAnimDifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_nor.tga"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "rotationSet": "PropZY",
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "HeadLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "sticky": "-X+X-Y+Y-Z",
+            "uuid": "abd673a2-1eed-4831-bc7e-02aefa315578"
+        },
+        {
+            "color": "c36512",
+            "flammable": true,
+            "hull": {
+                "col": "$GAME_DATA/Objects/Collision/obj_light_beamframelight.obj",
+                "x": 2,
+                "y": 1,
+                "z": 1
+            },
+            "name": "obj_light_beamframelight",
+            "physicsMaterial": "Metal",
+            "previewRotation": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+            ],
+            "ratings": {
+                "buoyancy": 4,
+                "density": 2,
+                "durability": 2,
+                "friction": 4
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$GAME_DATA/Objects/Mesh/lights/obj_light_beamframelight_off.fbx",
+                        "pose0": "$GAME_DATA/Objects/Mesh/lights/obj_light_beamframelight_on.fbx",
+                        "subMeshList": [
+                            {
+                                "material": "PoseAnimDifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/industrial/obj_industrial_beamslarge_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/industrial/obj_industrial_beamslarge_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/industrial/obj_industrial_beamslarge_nor.tga"
+                                ]
+                            },
+                            {
+                                "material": "PoseAnimLightCone",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_horizontalflare_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            {
+                                "material": "PoseAnimLightCone",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_spotlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "rotationSet": "PropZ",
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 40,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FloodLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "sticky": "-X+X+Y-Z",
+            "uuid": "6da28210-7de5-47b4-8edb-8bcad36dc67f"
+        },
+        {
+            "uuid": "9839804f-408c-4fb2-8e62-1de7b63fa692",
+            "name": "obj_light_factorylamp",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_factorylamp_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_factorylamp_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_factorylamp_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_factorylamp_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_factorylamp_on.fbx"
+                    }
+                ]
+            },
+            "color": "df7f01",
+            "hull": {
+                "x": 3,
+                "y": 4,
+                "z": 2,
+                "col": "$SURVIVAL_DATA/Objects/Collision/obj_light_factorylamp.obj"
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FactoryLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PropZ",
+            "sticky": "-Z",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 3,
+                "durability": 4,
+                "friction": 4,
+                "buoyancy": 6
+            },
+            "flammable": false
+        },
+        {
+            "uuid": "81c6367f-6f8a-4074-ab05-4caefe3fff86",
+            "name": "obj_light_packingtablelamp",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_packingtablelamp_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_packingtablelamp_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_packingtablelamp_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_packingtablelamp_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_packingtablelamp_on.fbx"
+                    }
+                ]
+            },
+            "color": "c36512",
+            "box": {
+                "x": 4,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "PackingtableLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PackingLamp",
+            "sticky": "+Y-Z-X+X",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 4,
+                "durability": 4,
+                "friction": 5,
+                "buoyancy": 4
+            },
+            "flammable": false
+        },
+        {
+            "uuid": "b2e19967-320f-49d0-91d9-bcafd340189a",
+            "name": "obj_light_fluorescentlamp",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_fluorescentlamp_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_fluorescentlamp_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_fluorescentlamp_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_fluorescentlamp_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_fluorescentlamp_on.fbx"
+                    }
+                ]
+            },
+            "color": "c36512",
+            "box": {
+                "x": 6,
+                "y": 1,
+                "z": 2
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FluorescentLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PropYmZX",
+            "sticky": "-Y+Z-Z+X-X",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 5,
+                "durability": 4,
+                "friction": 4,
+                "buoyancy": 3
+            },
+            "flammable": false
+        },
+        {
+            "uuid": "1cd55a94-43a7-4674-a84e-5ed8dcd45bcd",
+            "name": "obj_light_arealight",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshMap": {
+                            "arealight": {
+                                "material": "PoseAnimDifAsgNor",
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_arealight_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_arealight_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_arealight_nor.tga"
+                                ]
+                            },
+                            "beam": {
+                                "material": "PoseAnimLightCone",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            "flare": {
+                                "material": "PoseAnimLightFlare",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightflare_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            }
+                        },
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_arealight_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_arealight_on.fbx"
+                    }
+                ]
+            },
+            "color": "eeeeee",
+            "box": {
+                "x": 6,
+                "y": 1,
+                "z": 6
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "AreaLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PropY",
+            "sticky": "-Y",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 5,
+                "durability": 2,
+                "friction": 5,
+                "buoyancy": 3
+            },
+            "flammable": false
+        },
+        {
+            "uuid": "cf4a7ab0-ae46-4c28-b726-e45ba616dcf3",
+            "name": "obj_light_posterspotlight",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_horizontalflare_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightCone"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightFlare"
+                            }
+                        ],
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_posterspotlight_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_posterspotlight.fbx"
+                    }
+                ]
+            },
+            "color": "c36512",
+            "box": {
+                "x": 4,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "PosterLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PropY",
+            "sticky": "-Y",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 5,
+                "durability": 4,
+                "friction": 4,
+                "buoyancy": 2
+            },
+            "flammable": false
+        },
+        {
+            "uuid": "8a4cd333-bb19-43c0-8424-b93ff52c741e",
+            "name": "obj_light_posterspotlight2",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/lights/obj_light_posterspotlight_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightCone"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_horizontalflare_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightFlare"
+                            }
+                        ],
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_posterspotlight2_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/lights/obj_light_posterspotlight2.fbx"
+                    }
+                ]
+            },
+            "color": "c36512",
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "PosterLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "rotationSet": "PropY",
+            "sticky": "-Y",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "density": 5,
+                "durability": 4,
+                "friction": 4,
+                "buoyancy": 2
+            },
+            "flammable": false
+        },
+        {
+            "box": {
+                "x": 3,
+                "y": 1,
+                "z": 8
+            },
+            "color": "df9a16",
+            "flammable": false,
+            "name": "obj_spaceship_ceilinglight",
+            "physicsMaterial": "Metal",
+            "ratings": {
+                "buoyancy": 4,
+                "density": 3,
+                "durability": 2,
+                "friction": 6
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$SURVIVAL_DATA/Objects/Mesh/spaceship/obj_spaceship_ceilinglight_off.fbx",
+                        "pose0": "$SURVIVAL_DATA/Objects/Mesh/spaceship/obj_spaceship_ceilinglight_on.fbx",
+                        "subMeshMap": {
+                            "beamlight": {
+                                "material": "PoseAnimLightCone",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ]
+                            },
+                            "ceilinglight": {
+                                "material": "PoseAnimDifAsgNor",
+                                "textureList": [
+                                    "$SURVIVAL_DATA/Objects/Textures/spaceship/obj_spaceship_ceilinglight_dif.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/spaceship/obj_spaceship_ceilinglight_asg.tga",
+                                    "$SURVIVAL_DATA/Objects/Textures/spaceship/obj_spaceship_ceilinglight_nor.tga"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "rotationSet": "PropY",
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FluorescentLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+            "sticky": "-Y-Z+Z-X+X",
+            "uuid": "3a760404-ee86-4f52-b2a1-b95873f6abac"
+        },
+        {
+			"uuid": "785e7ad6-1ba9-4832-979e-2c85bb19bda1",
+			"name": "obj_construction_light",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"constructionlight": {
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light_nor.tga"
+								],
+								"material": "PoseAnimDifAsgNor"
+							},
+							"constructionlight02": {
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light02_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light02_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_light02_nor.tga"
+								],
+								"material": "PoseAnimDifAsgNor"
+							},
+							"flare": {
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/lights/obj_light_headlightflare_dif.tga",
+									"",
+									""
+								],
+								"material": "PoseAnimLightCone"
+							},
+							"beam": {
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+									"",
+									""
+								],
+								"material": "PoseAnimLightCone"
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/construction/obj_construction_light_off.fbx",
+						"pose0": "$SURVIVAL_DATA/Objects/Mesh/construction/obj_construction_light_on.fbx"
+					}
+				]
+			},
+			"color": "ebb100",
+			"box": {
+				"x": 3,
+				"y": 4,
+				"z": 3
+			},
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "ConstructionLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropYZ",
+			"sticky": "+Y-Y+X-X-Z",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 5,
+				"friction": 4,
+				"buoyancy": 2
+			},
+			"flammable": false
+		},
+        {
+			"uuid": "3d97e09c-12d8-4abf-bbf6-7e84f4490de4",
+			"name": "obj_manmade_shacklight",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/manmade/obj_manmade_atlas01_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/manmade/obj_manmade_atlas01_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/manmade/obj_manmade_atlas01_nor.tga"
+								],
+								"material": "PoseAnimDifAsgNor"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/manmade/obj_manmade_shacklight_off.fbx",
+						"pose0": "$SURVIVAL_DATA/Objects/Mesh/manmade/obj_manmade_shacklight_on.fbx"
+					}
+				]
+			},
+			"color": "e17f51",
+			"hull": {
+				"x": 2,
+				"y": 2,
+				"z": 2,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_manmade_shacklight.obj"
+			},
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "ShackLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropNegY",
+			"sticky": "+Y",
+			"physicsMaterial": "Plastic",
+			"ratings": {
+				"density": 2,
+				"durability": 2,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": true
+		},
+		{
+			"uuid": "bf6904f6-e499-46d3-9bb1-1a9f6e35034e",
+			"name": "obj_manmade_freshsign",
+			"renderable": "$SURVIVAL_DATA/Objects/Renderable/manmade/obj_manmade_freshsign.rend",
+			"color": "19f088",
+			"hull": {
+				"x": 5,
+				"y": 8,
+				"z": 1,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_manmade_signFresh.obj"
+			},
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 40,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FreshLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropZ",
+			"sticky": "-Z",
+			"physicsMaterial": "Wood",
+			"ratings": {
+				"density": 2,
+				"durability": 1,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": true
+		},
+        {
+			"uuid": "dc9da8bd-91e4-4180-9e56-45fbb51ce73c",
+			"name": "obj_warehouse_doorframelight",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"idx": 0,
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_doorframelight_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_doorframelight_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_doorframelight_nor.tga"
+								],
+								"material": "PoseAnimDifAsgNor"
+							},
+							{
+								"idx": 2,
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/lights/obj_light_horizontalflare_dif.tga",
+									"",
+									""
+								],
+								"material": "PoseAnimLightCone"
+							},
+							{
+								"idx": 1,
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+									"",
+									""
+								],
+								"material": "PoseAnimLightCone"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/warehouse/obj_warehouse_doorframelight_off.fbx",
+						"pose0": "$SURVIVAL_DATA/Objects/Mesh/warehouse/obj_warehouse_doorframelight_on.fbx"
+					}
+				]
+			},
+			"color": "c36512",
+			"box": {
+				"x": 4,
+				"y": 1,
+				"z": 1
+			},
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "FluorescentLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropYmZX",
+			"sticky": "-Y-Z+Z-X+X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 4,
+				"friction": 4,
+				"buoyancy": 1
+			},
+			"flammable": false
+		},
+        {
+			"uuid": "cc5f98f4-3952-4e76-bbe8-e5f33b219006",
+			"name": "obj_warehouse_encryptorsign_destruction",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_destruction_dif.TGA",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_destruction_asg.TGA",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_nor.TGA"
+								],
+								"material": "PoseAnimDifAsgNor"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/mesh/warehouse/obj_warehouse_encryptorsign_pose1.fbx",
+						"pose0": "$SURVIVAL_DATA/Objects/mesh/warehouse/obj_warehouse_encryptorsign_pose0.fbx"
+					}
+				]
+			},
+			"color": "4c6fe3",
+			"box": {
+				"x": 8,
+				"y": 4,
+				"z": 2
+			},
+            "scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "EncryptorLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropZ",
+			"physicsMaterial": "Metal",
+			"ratings": {},
+			"density": 500.0
+		},
+        {
+			"uuid": "a81502fc-650d-4c18-a62d-eb350365d59e",
+			"name": "obj_warehouse_encryptorsign_connection",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_connection_dif.TGA",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_connection_asg.TGA",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_encryptorsign_nor.TGA"
+								],
+								"material": "PoseAnimDifAsgNor"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/mesh/warehouse/obj_warehouse_encryptorsign_pose1.fbx",
+						"pose0": "$SURVIVAL_DATA/Objects/mesh/warehouse/obj_warehouse_encryptorsign_pose0.fbx"
+					}
+				]
+			},
+			"color": "c36512",
+			"box": {
+				"x": 8,
+				"y": 4,
+				"z": 2
+			},
+			"scripted": {
+                "classname": "Light",
+                "data": {
+                    "defaultLuminance": 50,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "effect": "EncryptorLight"
+                },
+                "filename": "$CONTENT_DATA/Scripts/Light.lua"
+            },
+			"rotationSet": "PropZ",
+			"physicsMaterial": "Metal",
+			"ratings": {},
+			"density": 500.0
+		}
+    ]
+}
