@@ -1,5 +1,9 @@
 dofile "EffectLibrary.lua"
 
+tool_paint = sm.uuid.new( "c60b9627-fc2b-4319-97c5-05921cb976c6" )
+
+
+
 ---@class GameHook : ToolClass
 GameHook = class()
 
@@ -52,35 +56,32 @@ end
 
 
 
-gameHooked = gameHooked or false
-local function attemptHook()
+oldUUID = oldUUID or sm.uuid.new
+function sm.uuid.new(uuid)
     if not gameHooked then
         gameHooked = true
 
         dofile("$CONTENT_570da70f-dd89-4dbe-abf1-0656ff9f6195/Scripts/vanilla_override.lua")
+    end
+
+    return oldUUID(uuid)
+end
+
+oldBind = oldBind or sm.game.bindChatCommand
+function sm.game.bindChatCommand(command, params, callback, help)
+    if not cmdInjected then
+        cmdInjected = true
 
         sm.game.bindChatCommand("/toggleLightsOverride", {}, "cl_onChatCommand", "Toggles whether the Lights++ mod overrides the vanilla lights, or adds it's own lights.")
     end
-end
 
-oldHud = oldHud or sm.gui.createSurvivalHudGui
-local function hudHook()
-    attemptHook()
-	return oldHud()
-end
-sm.gui.createSurvivalHudGui = hudHook
-
-oldBind = oldBind or sm.game.bindChatCommand
-local function bindHook(command, params, callback, help)
-    attemptHook()
 	return oldBind(command, params, callback, help)
 end
-sm.game.bindChatCommand = bindHook
 
 
 
 oldWorldEvent = oldWorldEvent or sm.event.sendToWorld
-function worldEventHook(world, callback, args)
+function sm.event.sendToWorld(world, callback, args)
     if callback == "sv_e_onChatCommand" then
         local command = args[1]
         if command == "/toggleLightsOverride" then
@@ -90,4 +91,3 @@ function worldEventHook(world, callback, args)
 
     return oldWorldEvent(world, callback, args)
 end
-sm.event.sendToWorld = worldEventHook

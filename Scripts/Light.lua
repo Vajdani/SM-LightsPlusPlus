@@ -10,8 +10,6 @@ Light.poseWeightCount = 1
 
 local strengthStepsFull = 25
 local strengthStepsNormal = 10
-local obj_consumable_inkammo = sm.uuid.new( "c7322cd1-3158-41d9-b15a-eff2f2f8d9f7" )
-local tool_paint = sm.uuid.new( "c60b9627-fc2b-4319-97c5-05921cb976c6" )
 
 function Light:server_onCreate()
     local saved = self.storage:load() or {}
